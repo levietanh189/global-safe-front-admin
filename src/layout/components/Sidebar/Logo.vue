@@ -2,12 +2,10 @@
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
     <transition name="sidebarLogoFade">
       <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
-        <img v-if="logo" :src="logo" class="sidebar-logo">
-        <h1 v-else class="sidebar-title">{{ title }} </h1>
+        <img src="@/assets/images/login/logo1.png" width="131" height="69">
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
-        <img v-if="logo" :src="logo" class="sidebar-logo">
-        <h1 class="sidebar-title">{{ title }} </h1>
+        <img src="@/assets/images/login/logo2.png" width="131" height="69">
       </router-link>
     </transition>
   </div>
@@ -24,8 +22,7 @@ export default {
   },
   data() {
     return {
-      title: 'Vue Admin Template',
-      logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
+      title: 'Global Safe App',
     }
   }
 }
@@ -42,12 +39,13 @@ export default {
 }
 
 .sidebar-logo-container {
+  padding-top: 40px;
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 150px;
   line-height: 50px;
-  background: #2b2f3a;
-  text-align: center;
+  background: #2FBBB2;
+  padding-left: 20px;
   overflow: hidden;
 
   & .sidebar-logo-link {

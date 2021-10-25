@@ -19,6 +19,7 @@
     left: 0;
     z-index: 1001;
     overflow: hidden;
+    color: white;
 
     // reset element-ui css
     .horizontal-collapse-transition {
@@ -78,17 +79,22 @@
 
     .is-active>.el-submenu__title {
       color: $subMenuActiveText !important;
+
     }
 
     & .nest-menu .el-submenu>.el-submenu__title,
     & .el-submenu .el-menu-item {
       min-width: $sideBarWidth !important;
-      background-color: $subMenuBg !important;
 
       &:hover {
-        background-color: $subMenuHover !important;
+        color: white !important;
+        background-color: $menuHover !important;
       }
     }
+  }
+  .el-menu-item.is-active{
+    color: #2FBBB2 !important;
+    background-color: white !important;
   }
 
   .hideSidebar {
